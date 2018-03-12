@@ -63,7 +63,7 @@ body {
   transition: 0.4s;
   }
 .page-picture:hover {
-  border: 5px double slategrey;
+  border: 1px double slategrey;
   border-radius: 15px;
 }
 .profile-image {
@@ -93,7 +93,7 @@ footer {
 h3 {
   font-size: 1.1em;
   text-transform: uppercase;
-  color:#026d62;
+  color: #026d62;
   transition: 0.3s;
 }
 h3:hover {
@@ -229,8 +229,7 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 2em;
-  font-family: 'Sacramento', cursive;
-}
+  }
 
 p {
   font-size: 1.3em;
