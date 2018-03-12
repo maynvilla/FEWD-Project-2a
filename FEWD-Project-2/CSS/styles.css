@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+.gallery::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+body {
+  font-family:"Lato", sans-serif;
+  margin: 0 auto;
+  background-color: #f4e6d4;
+  width: 95%;
+  text-align: center;
+  }
+
+.nav-top {
+  background-color: transparent;
+  height: 300px;
+  list-style: none;
+  margin: 0 auto;
+  position: relative;
+  }
+.nav-left {
+  display: block;
+  margin: 0 auto;
+  font-size: 2.5em;
+  font-family: 'Dawning of a New Day', cursive;
+  position: relative;
+  transition: 0.3s;
+  }
+.nav-left:hover {
+  letter-spacing: 3px;
+  }
+.nav-right {
+  display: block;
+  font-size: 18px;
+  padding-left: 0;
+  position: relative;
+  }
+.nav-right li {
+  background-color: white;
+  margin-top:2px;
+  padding-top:5px;
+  font-family: 'Comfortaa', cursive;
+  color: #2f9599;
+  transition: 0.3s;
+  }
+.nav-right li:hover {
+  letter-spacing: 3px;
+  color: #2F9599;
+  background-color: transparent;
+  }
+.page-picture {
+  width: 90%;
+  transition: 0.4s;
+  }
+.page-picture:hover {
+  border: 5px double slategrey;
+  border-radius: 15px;
+}
+.profile-image {
+  width: 80%;
+  transition: .5s;
+  }
+.profile-image:hover {
+  border: 5px solid #f8666b;
+  border-radius: 20px;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  }
+p {
+  font-size: 1.3em;
+  color: #584848;
+  font-family: 'Sacramento', cursive;
+}
+footer {
+  background-color: transparent;
+  padding-top: 20px;
+}
+h3 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color:#026d62;
+  transition: 0.3s;
+}
+h3:hover {
+  letter-spacing: 3px;
+}
+h2 {
+  transition: .3s;
+}
+h2:hover {
+  letter-spacing: 3px;
+}
+.wrapper {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.students-name {
+  float: left;
+  font-size: 18px;
+  margin: 0 auto;
+  font-family: 'Dawning of a New Day', cursive;
+}
+.top-page {
+  float: right;
+  font-size: 12px;
+  padding-top: 6px;
+  font-family: 'Comfortaa', cursive;
+  transition: 0.3s;
+}
+.top-page:hover {
+  letter-spacing: 2px;
+}
+.nav-below {
+  height: 100px;
+  }
+.menu-footer,
+.menu-footer li {
+  display: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  }
+.interests {
+  max-width: 320px;
+  background: transparent;
+  overflow: hidden;
+}
+div .gallery {
+  margin: 2px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  transition: 0.3s;
+}
+.email,
+.phone {
+  transition: 0.3s;
+}
+.email:hover {
+    letter-spacing: 3px;
+}
+.phone:hover {
+  letter-spacing: 3px;
+}
+.gallery:hover {
+  transform: scale(1.1);
+}
+.gallery img {
+  width: 80%;
+  height: auto;
+}
+/*Media query 768  */
+@media (min-width: 768px) {
+
+body {
+  background-color:#f4e6d4;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  }
+/* Navigation top */
+.nav-top {
+  background-color: transparent;
+  height: 200px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+.nav-left {
+  display: block;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Dawning of a New Day', cursive;
+
+  }
+.nav-right {
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  }
+.nav-right li {
+   display: inline-block;
+   padding-right: 12px;
+   position: relative;
+   background-color: transparent;
+  }
+
+#flex,
+#main-contact {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+/*Students Profile with picture  */
+.profile-image {
+  width: 40%;
+  background-color: #7db9e8;
+  margin: 20px 20px 50px 10px;
+  float: right;
+  }
+.about-para {
+  text-align: center;
+  font-size: 1.5em;
+  float:left;
+  width:50%;
+  font-family: 'Sacramento', cursive;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2em;
+  font-family: 'Sacramento', cursive;
+}
+
+p {
+  font-size: 1.3em;
+  color: #584848;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+}
+.container {
+  display: inline-block;
+  width: 45%;
+  position: relative;
+  padding: 10px;
+  vertical-align: top;
+  margin: 0 auto;
+  }
+p .container {
+  text-align:center;
+  margin-left: 40px;
+  margin-right: 40px;
+  }
+.contact-para {
+  padding-right: 100px;
+  padding-left: 100px;
+  }
+  /*  Navigation below*/
+.nav-below {
+  background-color: transparent;
+  height: 100px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+.students-name {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: 'Dawning of a New Day', cursive;
+  transition: 0.3s;
+  }
+.students-name:hover {
+  letter-spacing: 3px;
+
+}
+.menu-footer {
+  display: inline-block;
+  font-size: 16px;
+  text-align: right;
+  margin-left: 200px;
+  }
+.menu-footer li {
+   display: inline-block;
+   padding-right: 12px;
+   position: relative;
+   background-color: transparent;
+   transition: 0.3s;
+  }
+.menu-footer li:hover {
+  letter-spacing: 3px;
+}
+.interests {
+  max-width: 800px;
+  background: transparent;
+  overflow: auto;
+}
+div .gallery {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+  /*Not to be shown*/
+.top-page {
+    display: none;
+  }
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+  }
+}
+
+/* Media query 1024 */
+@media (min-width: 1024px) {
+
+body {
+  background-color:#f4e6d4;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  }
+/* Navigation top */
+.nav-top {
+  background-color: transparent;
+  height: 100px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+}
+.nav-left {
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-size:2.5em;
+  text-align: center;
+  font-family: 'Dawning of a New Day', cursive;
+  }
+.nav-right {
+  float: right;
+  font-size: 18px;
+  text-align: center;
+  }
+.nav-right li {
+  float: left;
+  padding:12px;
+  position: relative;
+  background-color: transparent;
+  }
+.wrapper {
+  margin: 0 auto;
+  background-color: white;
+  text-align: center;
+  }
+#flex,
+#main-contact {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
+/*Students Profile with picture  */
+.profile-image {
+  width: 30%;
+  background-color: #7db9e8;
+  margin: 20px 20px 50px 10px;
+  float: right;
+  }
+.about-para {
+  text-align: center;
+  font-size: 1.8em;
+  float: left;
+  width: 50%;
+  margin: 50px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 2em;
+  font-family: 'Comfortaa', cursive;
+}
+
+p {
+  font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: 'Comfortaa', cursive;
+  text-transform: uppercase;
+}
+.container {
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  padding: 20px;
+  }
+.photo-image {
+  display: inline-block;
+  width: 30%;
+  position: relative;
+  padding: 20px;
+  vertical-align: top;
+  }
+.contact-para {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+/* Nav below */
+.nav-below {
+  background-color: transparent;
+  height: 100%;
+  list-style: none;
+  }
+.students-name {
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-size:2em;
+  text-align: center;
+  font-family: 'Dawning of a New Day', cursive;
+  }
+.menu-footer {
+  float: right;
+  font-size: 16px;
+  margin-top:0;
+  margin-left: 250px;
+  }
+.menu-footer li {
+  float: left;
+  padding: 10px;
+  position: relative;
+  background-color: transparent;
+  }
+
+.interests {
+  max-width: 1200px;
+  background: transparent;
+  overflow: hidden;
+  margin: 0 auto;
+}
+div .gallery {
+  display: inline-block;
+  width:30%;
+  overflow: hidden;
+  position: relative;
+  padding: 5px;
+  }
+.gallery img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  }
+  /*Not to be shown*/
+.top-page {
+    display: none;
+  }
+.clearfix:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+  }
+
+}
